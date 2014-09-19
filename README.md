@@ -1,9 +1,9 @@
 [![Build Status](https://travis-ci.org/splendido/accounts-templates-ionic.svg?branch=master)](https://travis-ci.org/splendido/accounts-templates-ionic)
-accounts-Ionic-Ionic
-========================
-
 ## WIP!
 This package is still under development and was not yet published!
+
+accounts-Ionic-Ionic
+========================
 
 Meteor sign up and sign in templates (and much more!) styled for Ionic
 
