@@ -2,7 +2,7 @@
 ## WIP!
 This package is still under development and was not yet published!
 
-accounts-Ionic-Ionic
+accounts-templates-ionic
 ========================
 
 Meteor sign up and sign in templates (and much more!) styled for Ionic
