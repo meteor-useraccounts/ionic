@@ -9,7 +9,7 @@ Meteor sign up and sign in templates (and much more!) styled for Ionic
 
 This package depends on [accounts-templates-core](https://atmospherejs.com/package/accounts-templates-core)
 
-Learn more [here](http://accounts-templates.meteor.com) or have a look at a [live demo application](http://accounts-templates-ionic.meteor.com).
+Learn more [here](http://accounts-templates.meteor.com) or have a look at a [live demo application](http://accounts-templates-ionic.meteor.com) or at the full [documentation](https://github.com/splendido/accounts-templates-core).
 
 ## Warning!
 
