@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/splendido/accounts-templates-ionic.svg?branch=master)](https://travis-ci.org/splendido/accounts-templates-ionic)
-## WIP!
-This package is still under development and was not yet published!
+
+WIP: Empty project!
+===================
+**This package is still under development and was not yet published!**
 
 accounts-templates-ionic
 ========================
