@@ -1,12 +1,12 @@
 Package.describe({
     summary: "Accounts Templates styled for Ionic.",
-    version: "0.0.1",
-    name: "splendido:accounts-templates-ionic",
-    git: "https://github.com/splendido/accounts-templates-ionic.git",
+    version: "1.3.2",
+    name: "useraccounts:ionic",
+    git: "https://github.com/meteor-useraccounts/ionic.git",
 });
 
 Package.on_use(function(api, where) {
-    api.versionsFrom("METEOR@0.9.2.2");
+    api.versionsFrom("METEOR@1.0");
 
     api.use([
         "less",
@@ -14,11 +14,11 @@ Package.on_use(function(api, where) {
     ], "client");
 
     api.use([
-        "splendido:accounts-templates-core",
+        "useraccounts:core",
     ], ["client", "server"]);
 
     api.imply([
-        "splendido:accounts-templates-core@0.9.4",
+        "useraccounts:core@1.3.2",
     ], ["client", "server"]);
 
     api.add_files([
@@ -28,6 +28,8 @@ Package.on_use(function(api, where) {
         "lib/at_form.js",
         "lib/at_input.html",
         "lib/at_input.js",
+        "lib/at_nav_button.html",
+        "lib/at_nav_button.js",
         "lib/at_oauth.html",
         "lib/at_oauth.js",
         "lib/at_pwd_form.html",
@@ -57,8 +59,8 @@ Package.on_use(function(api, where) {
 
 Package.on_test(function(api) {
     api.use([
-        "splendido:accounts-templates-ionic",
-        "splendido:accounts-templates-core@0.9.4",
+        "useraccounts:ionic",
+        "useraccounts:core@1.3.2",
     ]);
 
     api.use([

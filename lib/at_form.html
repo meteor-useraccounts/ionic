@@ -1,11 +1,8 @@
 <template name="atForm">
   {{#unless hide}}
-    <div class="at-form">
+    <div class="content-padded at-form">
       {{#if showTitle}}
         {{> atTitle}}
-      {{/if}}
-      {{#if showSignInLink}}
-        {{> atSigninLink}}
       {{/if}}
       {{#if showOauthServices}}
         {{> atOauth}}
@@ -21,6 +18,9 @@
       {{/if}}
       {{#if showPwdForm}}
         {{> atPwdForm}}
+      {{/if}}
+      {{#if showSignInLink}}
+        {{> atSigninLink}}
       {{/if}}
       {{#if showSignUpLink}}
         {{> atSignupLink}}

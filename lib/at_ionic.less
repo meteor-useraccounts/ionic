@@ -1,12 +1,4 @@
 .at-form {
-  float: none;
-  margin: auto;
-  overflow: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  padding: 15px;
-
   p {
     font-size: 15px;
     line-height: 20px;
@@ -14,7 +6,7 @@
 }
 
 .at-title {
-    h3 {
+  h3 {
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 18px;
@@ -22,6 +14,27 @@
     text-align: center;
   }
 }
+
+.card.at-error {
+  background-color: rgb(217, 83, 79);    
+  p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.card.at-result {
+  background-color: rgb(92, 184, 92);    
+  p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
 
 .at-link.disabled {
   color: #444;    
@@ -32,31 +45,18 @@
   text-align: center;
 }
 
-.at-error, .at-result {
-  text-align: center; 
-}
-
-.at-oauth {
-  margin-top: 10px;
-}
-
 button.at-social-btn {
-  display: block;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 10px;
-  padding: 8px 10px;
-  border-radius: 5px;
-  font-size: 16px;
+
+  border: 0;
 
   i {
     float: left;
     width: 40px;
     font-size: 20px;
     margin-top: 1px;
-    padding-right: 15px;
-    padding-left: 5px;
-    border-right: 1px solid rgba(0,0,0,0.2);
+    padding-right: 10px;
+    padding-left: 10px;
+    //border-right: 1px solid rgba(0,0,0,0.2);
   }
 
   &#at-facebook {
@@ -120,40 +120,30 @@ button.at-social-btn {
   }
 }
 
-.at-sep {
+
+.at-sep{
   text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-
-  .line-thru {
-    border-bottom: 1px solid #999;
-    padding-bottom: 7px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+  &:before, &:after{
+    display: block;
+    content: " ";
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: absolute;
+    top: 48%;
+  }
+  &:before{
+    left: -60%;
+  }
+  &:after{
+    right: -60%;
   }
 }
 
-.at-pwd-form > form {
-  margin-top: 20px;
-
-  label {
-    margin-bottom: 5px;
-    font-weight: 500;
-    font-size: 14px;
-  }
-}
-
-#at-btn{
-  font-size: 16px;
-  padding: 10px 12px;
-  margin-top: 30px;
-}
-
-.at-signup-link {
-  margin-top: 20px;
-  font-size: 13px;
+.at-input.validating * {
+  cursor:progress;
 }
 
 .at-terms-link {
