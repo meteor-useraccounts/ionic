@@ -38,16 +38,16 @@ If you'd like to use Ionic's icon set rather than the default Font Awesome set, 
 
 ```
 AccountsTemplates.configure({
-texts: {
-  socialIcons: {
-    facebook: "icon ion-social-facebook",
-    twitter: "icon ion-social-twitter",
-    google: "icon ion-social-google",
-    github: "icon ion-social-github",
-    linkedin: "icon ion-social-linkedin",
-    instagram: "icon ion-social-instagram"
+  texts: {
+    socialIcons: {
+      facebook: "icon ion-social-facebook",
+      twitter: "icon ion-social-twitter",
+      google: "icon ion-social-google",
+      github: "icon ion-social-github",
+      linkedin: "icon ion-social-linkedin",
+      instagram: "icon ion-social-instagram"
+    }
   }
-}
 });
 
 AccountsTemplates.configure({
