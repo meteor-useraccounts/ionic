@@ -18,7 +18,7 @@ This project was not yet published to atmosphere.
 
 Adding this package with `meteor add useraccounts:ionic` does not add any other packages providing Ionic. This is to let you choose the flavour you prefer, being it compiled, less, sass, or from CDN!
 
-At the moment it is up to date with Ionic X.X.X.
+At the moment it is up to date with Ionic 2.0.0.
 
 
 ## Contributing
