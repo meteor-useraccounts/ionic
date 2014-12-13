@@ -20,6 +20,18 @@ AccountsTemplates.configure({
 });
 ```
 
+## WIP
+
+This project was not yet published to atmosphere.
+
+
+## Bring Your Own Ionic
+
+Adding this package with `meteor add useraccounts:ionic` does not add any other packages providing Ionic. This is to let you choose the flavour you prefer, being it compiled, less, sass, or from CDN!
+
+At the moment it is up to date with Ionic 2.0.0.
+
+
 ## Ionicons
 
 If you'd like to use Ionic's icon set rather than the default Font Awesome set, add this configuration:
@@ -48,17 +60,6 @@ AccountsTemplates.configure({
   }
 });
 ```
-
-## WIP
-
-This project was not yet published to atmosphere.
-
-
-## Bring Your Own Ionic
-
-Adding this package with `meteor add useraccounts:ionic` does not add any other packages providing Ionic. This is to let you choose the flavour you prefer, being it compiled, less, sass, or from CDN!
-
-At the moment it is up to date with Ionic 2.0.0.
 
 
 ## Contributing
