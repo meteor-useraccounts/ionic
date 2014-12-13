@@ -1,7 +1,7 @@
 <template name="atError">
-  <div class="at-error">
+  <div class="card at-error">
     {{#each error}}
-      <p>{{errorText}}</p>
+    <div class="item item-text-wrap">{{errorText}}</div>
     {{/each}}
   </div>
 </template>

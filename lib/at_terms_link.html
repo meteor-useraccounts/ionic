@@ -1,16 +1,18 @@
 <template name="atTermsLink">
-  <div class="at-terms-link">
-    <p>
-      {{text}}
-      {{#if privacyUrl}}
-        <a href="{{privacyUrl}}" class="{{disabled}}">{{privacyLinkText}}</a>
-      {{/if}}
-      {{#if showTermsAnd}}
-        {{and}}
-      {{/if}}
-      {{#if termsUrl}}
-        <a href="{{termsUrl}}" class="{{disabled}}">{{termsLinkText}}</a>
-      {{/if}}
-    </p>
+  <div class="at-terms-link card">
+    <div class="item item-text-wrap">
+      <small>
+        {{text}}
+        {{#if privacyUrl}}
+          <a href="{{privacyUrl}}" class="{{disabled}} positive">{{privacyLinkText}}</a>
+        {{/if}}
+        {{#if showTermsAnd}}
+          {{and}}
+        {{/if}}
+        {{#if termsUrl}}
+          <a href="{{termsUrl}}" class="{{disabled}} positive">{{termsLinkText}}</a>
+        {{/if}}
+      </small>
+    </div>
   </div>
 </template>
