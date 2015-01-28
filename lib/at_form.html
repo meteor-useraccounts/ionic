@@ -19,6 +19,9 @@
       {{#if showPwdForm}}
         {{> atPwdForm}}
       {{/if}}
+      {{#if showTermsLink}}
+        {{> atTermsLink}}
+      {{/if}}
       {{#if showSignInLink}}
         {{> atSigninLink}}
       {{/if}}
@@ -26,9 +29,5 @@
         {{> atSignupLink}}
       {{/if}}
     </div>
-
-    {{#if showTermsLink}}
-      {{> atTermsLink}}
-    {{/if}}
   {{/unless}}
 </template>
