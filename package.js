@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Accounts Templates styled for Ionic.",
-    version: "1.5.0",
+    version: "1.6.0",
     name: "useraccounts:ionic",
     git: "https://github.com/meteor-useraccounts/ionic.git",
 });
@@ -18,7 +18,7 @@ Package.on_use(function(api, where) {
     ], ["client", "server"]);
 
     api.imply([
-        "useraccounts:core@1.5.0",
+        "useraccounts:core@1.6.0",
     ], ["client", "server"]);
 
     api.add_files([
@@ -60,7 +60,7 @@ Package.on_use(function(api, where) {
 Package.on_test(function(api) {
     api.use([
         "useraccounts:ionic",
-        "useraccounts:core@1.5.0",
+        "useraccounts:core@1.6.0",
     ]);
 
     api.use([
