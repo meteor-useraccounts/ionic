@@ -3,10 +3,10 @@
 </template>
 
 <template name="atTextInput">
-  <div class="at-input item item-input {{#if showLabels}}item-stacked-label{{/if}} {{#if isValidating}}validating{{/if}} {{#if hasError}}has-error{{/if}} {{#if hasSuccess}}has-success{{/if}} {{#if feedback}}has-feedback{{/if}}">
+  <div class="at-input item item-input item-text-wrap {{#if showLabels}}item-stacked-label{{/if}} {{#if isValidating}}validating{{/if}} {{#if hasError}}has-error{{/if}} {{#if hasSuccess}}has-success{{/if}} {{#if feedback}}has-feedback{{/if}}">
     {{#if showLabels}}
       <label class="input-label" for="at-field-{{_id}}">
-        {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}
+        {{{displayName}}} {{#unless required}}{{optionalText}}{{/unless}}
       </label>
     {{/if}}
     <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
@@ -20,18 +20,21 @@
 </template>
 
 <template name="atCheckboxInput">
-  <div class="at-input item item-checkbox">
-    <label class="checkbox" for="at-field-{{_id}}">
+  <div class="at-input item item-toggle item-text-wrap">
+    <label class="toggle toggle-balance" for="at-field-{{_id}}">
       <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" {{disabled}}>
+      <div class="track">
+        <div class="handle"></div>
+      </div>
     </label>
-    {{displayName}}
+    {{{displayName}}}
   </div>
 </template>
 
 <template name="atSelectInput">
-  <div class="at-input item item-input item-select">
+  <div class="at-input item item-input item-select item-text-wrap">
     <div class="input-label">
-      <label for="at-field-{{_id}}">{{displayName}}</label>
+      <label for="at-field-{{_id}}">{{{displayName}}}</label>
     </div>
     <select id="at-field-{{_id}}" name="at-field-{{_id}}">
       {{#each values}}
@@ -43,10 +46,10 @@
 
 <template name="atRadioInput">
   <div class="item item-divider">
-    {{displayName}}
+    {{{displayName}}}
   </div>
   {{#each values}}
-    <label class="at-input item item-radio">
+    <label class="at-input item item-radio item-text-wrap">
       <input id="at-field-{{id}}-choice-{{value}}" type="radio" name="at-field-{{id}}" value={{value}}>
       <div class="item-content">{{text}}</div>
       <i class="radio-icon ion-checkmark"></i>
