@@ -20,10 +20,6 @@ AccountsTemplates.configure({
 });
 ```
 
-## WIP
-
-This project was not yet published to atmosphere.
-
 
 ## Bring Your Own Ionic
 
