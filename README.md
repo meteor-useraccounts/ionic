@@ -6,7 +6,7 @@ Meteor sign up and sign in templates styled for Ionic
 
 This package depends on [useraccounts:core](https://atmospherejs.com/useraccounts/core)
 
-Learn more [here](http://accounts-templates.meteor.com) or have a look at the full [documentation](https://github.com/meteor-useraccounts/core).
+Learn more [here](http://useraccounts.meteor.com) or have a look at the full [documentation](https://github.com/meteor-useraccounts/core).
 
 **Note:** At the moment Ionic does not support form validation.
 So it is mandatory to configure UserAccounts with, at least,
