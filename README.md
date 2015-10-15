@@ -1,4 +1,6 @@
+[![Meteor Icon](http://icon.meteor.com/package/useraccounts:ionic)](https://atmospherejs.com/useraccounts/ionic)
 [![Build Status](https://travis-ci.org/meteor-useraccounts/ionic.svg?branch=master)](https://travis-ci.org/meteor-useraccounts/ionic)
+
 useraccounts:ionic
 ==================
 
